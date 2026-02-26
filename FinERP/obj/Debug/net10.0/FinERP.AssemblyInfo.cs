@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FinERP")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2545a75fa13bb1bf17edb8fcb063ff30e7a6d394")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b5c1f983bfb0344d0df15b69e2c2554ca69fa9fd")]
 [assembly: System.Reflection.AssemblyProductAttribute("FinERP")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FinERP")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

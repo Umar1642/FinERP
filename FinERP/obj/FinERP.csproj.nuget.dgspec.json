@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/workspaces/codespaces-blank/FinERP/FinERP.csproj": {}
+    "/workspaces/FinERP/FinERP/FinERP.csproj": {}
   },
   "projects": {
-    "/workspaces/codespaces-blank/FinERP/FinERP.csproj": {
+    "/workspaces/FinERP/FinERP/FinERP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/workspaces/codespaces-blank/FinERP/FinERP.csproj",
+        "projectUniqueName": "/workspaces/FinERP/FinERP/FinERP.csproj",
         "projectName": "FinERP",
-        "projectPath": "/workspaces/codespaces-blank/FinERP/FinERP.csproj",
+        "projectPath": "/workspaces/FinERP/FinERP/FinERP.csproj",
         "packagesPath": "/home/codespace/.nuget/packages/",
-        "outputPath": "/workspaces/codespaces-blank/FinERP/obj/",
+        "outputPath": "/workspaces/FinERP/FinERP/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/codespace/.nuget/NuGet/NuGet.Config"
@@ -49,6 +49,16 @@
               "target": "Package",
               "version": "[10.0.0, )",
               "autoReferenced": true
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[10.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[10.0.3, )"
             },
             "MudBlazor": {
               "target": "Package",
