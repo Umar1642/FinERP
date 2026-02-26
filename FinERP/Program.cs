@@ -5,6 +5,9 @@ using FinERP.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddRazorComponents()
+    .AddInteractiveServerComponents();
+
 // Add MudBlazor services
 builder.Services.AddMudServices();
 
