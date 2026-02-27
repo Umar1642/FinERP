@@ -1,0 +1,48 @@
+@page "/login"
+@rendermode InteractiveServer
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@inject NavigationManager NavigationManager
+
+<MudContainer MaxWidth="MaxWidth.Small" Class="mt-16">
+    <MudCard Elevation="3" Class="pa-8">
+        <MudText Typo="Typo.h4" Align="Align.Center" GutterBottom="true">FinERP Login</MudText>
+        
+        <MudTextField @bind-Value="email" Label="Email" Variant="Variant.Outlined" Margin="Margin.Dense" Class="mb-4" />
+        <MudTextField @bind-Value="password" Label="Password" InputType="InputType.Password" Variant="Variant.Outlined" Margin="Margin.Dense" Class="mb-6" />
+        
+        <MudButton Color="Color.Primary" Variant="Variant.Filled" FullWidth="true" Size="Size.Large" OnClick="HandleLogin">
+            Sign In
+        </MudButton>
+        
+        @if (!string.IsNullOrEmpty(errorMessage))
+        {
+            <MudText Color="Color.Error" Align="Align.Center" Class="mt-4">@errorMessage</MudText>
+        }
+    </MudCard>
+</MudContainer>
+
+@code {
+    private string email = "";
+    private string password = "";
+    private string errorMessage = "";
+
+    private void HandleLogin()
+    {
+        
+        if (email == "admin@erp.com" && password == "password")
+        {
+
+            var customProvider = (FinERP.Security.FakeAuthStateProvider)AuthenticationStateProvider;
+            
+            // 2. Log them in!
+            customProvider.MarkUserAsAuthenticated(email);
+            
+            // 3. Kick them over to the protected Salary page
+            NavigationManager.NavigateTo("/salary");
+        }
+        else
+        {
+            errorMessage = "Invalid email or password.";
+        }
+    }
+}
