@@ -1,6 +1,7 @@
 @page "/"
 @using MudBlazor
 @using MudBlazor.Charts
+@inject IDbContextFactory<AppDbContext> DbFactory
 
 <MudContainer MaxWidth="MaxWidth.False" Class="pa-6">
 
@@ -12,8 +13,8 @@
 
         <MudItem xs="12" sm="6" md="3">
             <MudCard Class="pa-4">
-                <MudText Typo="Typo.subtitle2">Total Sales</MudText>
-                <MudText Typo="Typo.h5">$12,430</MudText>
+                <MudText Typo="Typo.subtitle2">Total Payroll</MudText>
+                <MudText Typo="Typo.h5">@salarySum.ToString("C2")</MudText>
             </MudCard>
         </MudItem>
 
@@ -91,6 +92,14 @@
 @code {
 
     private string[] _labels = { "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun" };
+    private decimal salarySum;
+
+    protected override async Task OnInitializedAsync()
+    {
+        using var context = await DbFactory.CreateDbContextAsync();
+        salarySum = await context.Employees
+                                    .SumAsync(x => (decimal)x.SalaryUSD);
+    }
 
     private List<ChartSeries<double>> _series = new()
     {
