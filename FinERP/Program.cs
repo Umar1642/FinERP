@@ -3,6 +3,8 @@ using FinERP.Components;
 using Microsoft.EntityFrameworkCore;
 using FinERP.Data;
 using Microsoft.AspNetCore.Components.Authorization;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using FinERP.Security;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,18 +16,17 @@ builder.Services.AddMudServices();
 
 // Add services to the container.
 builder.Services.AddDbContextFactory<AppDbContext>(options =>
-    options.UseSqlite(
-        builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // Blazor authentication state and logic
 builder.Services.AddAuthorizationCore();
-builder.Services.AddAuthentication("Cookies").AddCookie(options =>
-{
-    options.LoginPath = "/login";
-});
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(options =>
+    {
+        options.LoginPath = "/login";
+    });
 builder.Services.AddAuthorization();
-builder.Services.AddCascadingAuthenticationState();
-builder.Services.AddScoped<AuthenticationStateProvider, FinERP.Security.FakeAuthStateProvider>();
+builder.Services.AddScoped<AuthenticationStateProvider, FakeAuthStateProvider>();
 
 var app = builder.Build();
 
@@ -33,14 +34,12 @@ var app = builder.Build();
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Error", createScopeForErrors: true);
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 app.UseStatusCodePagesWithReExecute("/not-found", createScopeForStatusCodePages: true);
 
 app.UseHttpsRedirection();
 app.UseRouting();
-
 
 app.UseAuthentication();
 app.UseAuthorization();
@@ -49,5 +48,10 @@ app.UseAntiforgery();
 app.MapStaticAssets();
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode();
+
+// Seed admin user
+using var scope = app.Services.CreateScope();
+var context = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+DataSeeder.SeedUsers(context);
 
 app.Run();

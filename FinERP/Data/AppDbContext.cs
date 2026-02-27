@@ -9,6 +9,7 @@ namespace FinERP.Data
         public DbSet<Models.Employee> Employees { get; set; }
         public DbSet<SalesOrder> SalesOrders { get; set; }
         public DbSet<InventoryManagement> InventoryManagements { get; set; }
+        public DbSet<User> Users { get; set; }
     }    
 }
 
