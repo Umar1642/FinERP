@@ -3,8 +3,8 @@
 @rendermode InteractiveServer
 @using FinERP.Models
 @using Microsoft.EntityFrameworkCore
-@using CultureInfo = System.Globalization.CultureInfo
 @using FinERP.Data
+@using CultureInfo = System.Globalization.CultureInfo
 @inject IDbContextFactory<FinERP.Data.AppDbContext> DbFactory
 
 <MudText Typo="Typo.h3" GutterBottom="true">Salary Management</MudText>
@@ -34,7 +34,7 @@
         <PropertyColumn Property="x => x.Department" Title="Dept" />
         <PropertyColumn Property="x => x.Role" Title="Role" />
         <PropertyColumn Property="x => x.HireDate" Title="Hire Date" format="d" />
-        <PropertyColumn Property="x => x.SalaryUSD" Title="Salary" />
+        <PropertyColumn Property="x => x.SalaryUSD" Title="Salary" format="c" />
         <PropertyColumn Property="x => x.Region" Title="Region" />
         <PropertyColumn Property="x => x.Employment_Status" Title="Status" CellStyleFunc="@_cellStyleFunc" />
         <PropertyColumn Property="x => x.Manager_ID" Title="Manager ID" />

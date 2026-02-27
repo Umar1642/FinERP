@@ -12,7 +12,7 @@ builder.Services.AddRazorComponents()
 // Add MudBlazor services
 builder.Services.AddMudServices();
 
-// Add services to the container.
+// Add services to the container
 builder.Services.AddDbContextFactory<AppDbContext>(options =>
     options.UseSqlite(
         builder.Configuration.GetConnectionString("DefaultConnection")));
@@ -49,5 +49,11 @@ app.UseAntiforgery();
 app.MapStaticAssets();
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode();
+
+
+//force $ for any currency formatting
+var cultureInfo = new System.Globalization.CultureInfo("en-US");
+System.Globalization.CultureInfo.DefaultThreadCurrentCulture = cultureInfo;
+System.Globalization.CultureInfo.DefaultThreadCurrentUICulture = cultureInfo;
 
 app.Run();
