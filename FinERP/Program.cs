@@ -50,7 +50,6 @@ app.MapStaticAssets();
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode();
 
-
 //force $ for any currency formatting
 var cultureInfo = new System.Globalization.CultureInfo("en-US");
 System.Globalization.CultureInfo.DefaultThreadCurrentCulture = cultureInfo;

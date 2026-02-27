@@ -1,5 +1,7 @@
 @page "/login"
 @rendermode InteractiveServer
+@attribute [AllowAnonymous]
+
 @inject AuthenticationStateProvider AuthenticationStateProvider
 @inject NavigationManager NavigationManager
 
@@ -28,6 +30,7 @@
 
     private void HandleLogin()
     {
+        Console.Write("clicked");
         
         if (email == "admin@erp.com" && password == "password")
         {
@@ -36,9 +39,8 @@
             
             // 2. Log them in!
             customProvider.MarkUserAsAuthenticated(email);
-            
             // 3. Kick them over to the protected Salary page
-            NavigationManager.NavigateTo("/salary");
+            NavigationManager.NavigateTo("/");
         }
         else
         {
