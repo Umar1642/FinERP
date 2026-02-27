@@ -12,7 +12,7 @@ builder.Services.AddRazorComponents()
 builder.Services.AddMudServices();
 
 // Add services to the container.
-builder.Services.AddDbContext<AppDbContext>(options =>
+builder.Services.AddDbContextFactory<AppDbContext>(options =>
     options.UseSqlite(
         builder.Configuration.GetConnectionString("DefaultConnection")));
 

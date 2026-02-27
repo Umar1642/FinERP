@@ -1,0 +1,101 @@
+Id,Name,Department,Role,HireDate,SalaryUSD,Region,Employment_Status,Manager_ID
+1001,Sarah Jenkins,Engineering,Lead Dev,2022-03-15,135000,North NA,Active,1040
+1002,Marcus Thorne,Sales,Account Exec,2023-01-10,85000,EMEA,Active,1012
+1003,Elena Rodriguez,Finance,Controller,2021-11-22,110000,LATAM,Active,1008
+1004,David Wu,Operations,Manager,2020-05-05,98000,APAC,Active,1008
+1005,Chloe Smith,Marketing,Analyst,2024-02-18,72000,North NA,Probation,1022
+1006,James Anderson,Engineering,Dev Ops,2022-06-12,115000,North NA,Active,1001
+1007,Fatima Zahra,Finance,Auditor,2021-08-30,92000,EMEA,Active,1003
+1008,Robert Chen,C-Suite,COO,2019-04-01,210000,North NA,Active,0000
+1009,Linda Park,Sales,SDR,2023-09-15,55000,APAC,Active,1002
+1010,Kevin Vance,Operations,Logistics,2022-12-01,68000,North NA,Active,1004
+1011,Sia Kapoor,Marketing,Manager,2021-02-14,105000,APAC,Active,1022
+1012,Tom Hiddles,Sales,Director,2020-07-20,145000,EMEA,Active,1008
+1013,Anna Muller,Engineering,QA Lead,2023-03-03,95000,EMEA,Active,1001
+1014,Brian O'Connor,Finance,Analyst,2024-01-05,78000,North NA,Probation,1003
+1015,Mei Ling,Operations,Specialist,2022-05-19,62000,APAC,Active,1004
+1016,John Miller,Engineering,Junior Dev,2024-05-10,75000,North NA,Active,1001
+1017,Samantha Reed,Marketing,Designer,2021-09-25,82000,North NA,Active,1011
+1018,Oliver Twist,Sales,Account Exec,2023-11-12,88000,EMEA,Active,1012
+1019,Yara Shahidi,Finance,Tax Specialist,2022-04-30,95000,North NA,Active,1003
+1020,Liam Neeson,Operations,Security,2020-01-15,70000,EMEA,Active,1004
+1021,Victor Hugo,Engineering,Architect,2019-12-01,160000,EMEA,Active,1040
+1022,Diana Prince,Marketing,Director,2020-08-11,155000,North NA,Active,1008
+1023,Zane Grey,Sales,Manager,2021-06-05,102000,LATAM,Active,1012
+1024,Xavier Woods,Engineering,Backend Dev,2023-02-28,110000,North NA,Active,1001
+1025,Ursula K,Finance,Payroll,2022-10-10,74000,EMEA,Active,1003
+1026,Toby Flenderson,HR,Specialist,2018-05-20,65000,North NA,Active,1008
+1027,Ryan Howard,Marketing,Intern,2024-05-01,45000,North NA,Probation,1011
+1028,Quinn Fabray,Sales,SDR,2024-02-14,52000,North NA,Active,1023
+1029,Peter Parker,Engineering,Intern,2024-06-01,50000,North NA,Probation,1001
+1030,Oscar Martinez,Finance,Accountant,2017-03-22,85000,North NA,Active,1003
+1031,Nina Simone,Operations,Coord,2022-08-15,63000,LATAM,Active,1004
+1032,Miles Davis,Marketing,Copywriter,2021-05-19,78000,EMEA,Active,1011
+1033,Lara Croft,Engineering,Security,2020-11-30,125000,EMEA,Active,1021
+1034,Kobe Bryant,Sales,Lead,2019-02-01,140000,North NA,Active,1012
+1035,Julia Roberts,Finance,Treasury,2021-01-12,98000,North NA,Active,1003
+1036,Ian McKellen,Operations,Procurement,2020-04-14,88000,EMEA,Active,1004
+1037,Harry Potter,Engineering,Frontend Dev,2023-07-07,105000,EMEA,Active,1001
+1038,Gwen Stacy,Marketing,SEO,2022-09-09,76000,North NA,Active,1011
+1039,Finn Hudson,Sales,Account Exec,2023-12-01,84000,North NA,Active,1023
+1040,Elon Tusk,Engineering,CTO,2018-01-01,245000,North NA,Active,1008
+1041,Danielle Steel,Finance,Analyst,2022-11-15,79000,EMEA,Active,1003
+1042,Charlie Day,Operations,Janitor,2021-03-03,42000,North NA,Active,1004
+1043,Bella Swan,Marketing,Social Media,2023-08-20,68000,North NA,Active,1011
+1044,Aria Montgomery,Sales,SDR,2024-04-12,54000,North NA,Active,1023
+1045,Zoe Saldana,Engineering,Data Scientist,2021-07-01,130000,APAC,Active,1040
+1046,Yusuf Islam,Finance,AP Clerk,2023-05-18,58000,EMEA,Active,1003
+1047,Xena Warrior,Operations,Supply Chain,2020-10-10,92000,EMEA,Active,1004
+1048,Wanda Maximoff,Engineering,QA,2022-02-02,94000,EMEA,Active,1013
+1049,Vito Corleone,Sales,VP Sales,2018-06-06,195000,North NA,Active,1008
+1050,Ulysses Grant,Finance,Manager,2019-05-05,115000,North NA,Active,1003
+1051,Thea Queen,Marketing,Events,2022-01-12,71000,North NA,Active,1011
+1052,Steve Rogers,Operations,Supervisor,2019-07-04,102000,North NA,Active,1004
+1053,Riley Reid,Sales,Account Exec,2023-03-15,86000,APAC,Active,1002
+1054,Quentin Tarantino,Engineering,Lead,2020-09-21,142000,North NA,Active,1040
+1055,Piper Halliwell,Finance,Analyst,2023-11-01,80000,North NA,Active,1003
+1056,Oliver Queen,C-Suite,CEO,2017-01-01,280000,North NA,Active,0000
+1057,Natasha Romanoff,Engineering,Cybersec,2021-04-18,138000,EMEA,Active,1021
+1058,Monica Geller,Operations,Quality,2020-03-03,89000,North NA,Active,1004
+1059,Logan Howlett,Sales,Account Exec,2022-12-12,91000,North NA,Active,1034
+1060,Katniss Everdeen,Marketing,PR,2022-10-15,83000,North NA,Active,1011
+1061,Jim Halpert,Sales,Lead,2019-06-15,110000,North NA,Active,1049
+1062,Iris West,Engineering,Frontend,2023-09-01,102000,North NA,Active,1001
+1063,Harvey Specter,Legal,General Counsel,2018-02-12,185000,North NA,Active,1056
+1064,Geralt Rivia,Operations,Logistics,2021-05-05,72000,EMEA,Active,1004
+1065,Fiona Gallagher,Finance,Collections,2023-08-08,61000,North NA,Active,1003
+1066,Eddie Brock,Marketing,Content,2022-11-11,74000,North NA,Active,1011
+1067,Daisy Johnson,Engineering,Systems,2021-02-22,122000,APAC,Active,1040
+1068,Clark Kent,Marketing,Writer,2020-06-18,88000,North NA,Active,1011
+1069,Bruce Wayne,C-Suite,Chairman,2016-01-01,300000,North NA,Active,0000
+1070,Barry Allen,Operations,Fleet,2022-10-20,77000,North NA,Active,1004
+1071,Arthur Curry,Sales,Account Exec,2023-05-12,87000,APAC,Active,1002
+1072,Wanda Wilson,Engineering,QA,2024-01-15,92000,North NA,Probation,1013
+1073,Tony Stark,Engineering,Lead Architect,2018-04-04,180000,North NA,Active,1040
+1074,Stephen Strange,Legal,Patent Atty,2020-01-30,165000,North NA,Active,1063
+1075,Reed Richards,Engineering,Data Scientist,2021-11-11,145000,North NA,Active,1040
+1076,Peter Quill,Sales,Account Exec,2022-08-08,82000,APAC,Active,1002
+1077,Matt Murdock,Legal,Counsel,2021-09-15,130000,North NA,Active,1063
+1078,Luke Skywalker,Engineering,Pilot,2019-05-25,115000,APAC,Active,1001
+1079,Jean Grey,HR,Director,2020-02-12,150000,North NA,Active,1056
+1080,Hal Jordan,Operations,Fleet Lead,2021-03-21,95000,North NA,Active,1004
+1081,Gamora Zen,Sales,Manager,2020-10-30,112000,APAC,Active,1049
+1082,Erik Lehnsherr,Operations,Plant Mgr,2018-07-07,140000,EMEA,Active,1008
+1083,Charles Xavier,HR,Chief People,2017-09-09,190000,North NA,Active,1056
+1084,Bob Parr,Finance,Analyst,2022-11-20,82000,North NA,Active,1003
+1085,Alice Cullen,Marketing,Forecasting,2021-06-18,91000,North NA,Active,1011
+1086,Zatanna Zatara,Marketing,Events,2023-12-15,73000,EMEA,Active,1011
+1087,Yoda G,Management,Advisor,2015-01-01,200000,APAC,Active,1056
+1088,Xavier Renegade,Operations,Consultant,2024-02-01,95000,North NA,Active,1004
+1089,Walter White,Engineering,Chemist,2020-03-12,130000,North NA,Active,1040
+1090,Vernon Schillinger,Operations,Security,2019-08-14,68000,North NA,Active,1020
+1091,Umar Johnson,HR,Consultant,2022-04-12,88000,North NA,Active,1079
+1092,T'Challa King,C-Suite,Regional Dir,2019-11-11,185000,APAC,Active,1008
+1093,SpongeBob SquarePants,Operations,Cook,2020-07-17,45000,APAC,Active,1004
+1094,Rick Sanchez,Engineering,R&D Lead,2018-12-12,195000,North NA,Active,1040
+1095,Peggy Carter,Operations,Director,2019-01-15,160000,EMEA,Active,1008
+1096,Noel Miller,Marketing,Creator,2023-10-10,95000,North NA,Active,1011
+1097,Morty Smith,Engineering,Intern,2024-01-01,48000,North NA,Probation,1094
+1098,Loki Laufeyson,Sales,Account Exec,2022-05-05,94000,EMEA,Active,1012
+1099,Kara Danvers,Marketing,Writer,2021-08-08,89000,North NA,Active,1011
+1100,Jim Bean,Finance,Analyst,2023-04-20,77000,North NA,Active,1003
