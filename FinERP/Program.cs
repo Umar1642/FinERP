@@ -14,7 +14,7 @@ builder.Services.AddRazorComponents()
 // Add MudBlazor services
 builder.Services.AddMudServices();
 
-// Add services to the container.
+// Add services to the container
 builder.Services.AddDbContextFactory<AppDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
@@ -55,7 +55,7 @@ var factory = scope.ServiceProvider.GetRequiredService<IDbContextFactory<AppDbCo
 using var context = factory.CreateDbContext();
 
 DataSeeder.SeedUsers(context);
-
+//force $ for any currency formatting
 var cultureInfo = new System.Globalization.CultureInfo("en-US");
 System.Globalization.CultureInfo.DefaultThreadCurrentCulture = cultureInfo;
 System.Globalization.CultureInfo.DefaultThreadCurrentUICulture = cultureInfo;
